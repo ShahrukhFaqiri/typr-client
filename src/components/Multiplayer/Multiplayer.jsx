@@ -23,7 +23,7 @@ export default function Multiplayer() {
   const socketRef = useRef();
 
   useEffect(() => {
-    socketRef.current = io();
+    socketRef.current = io(`https://code-typr.herokuapp.com/`);
 
     socketRef.current.on(NEW_PROMPT_EVENT, (prompt) => {
       setServerPrompt(prompt.codeBlock.split('\n'));
