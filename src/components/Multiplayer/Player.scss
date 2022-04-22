@@ -1,0 +1,30 @@
+.player-card {
+  position: relative;
+  width: 75%;
+  background-color: #F6F0F0;
+  padding: 10px;
+  border: 2px solid black;
+
+  .car {
+    position: relative;
+  }
+
+  section {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    .user-stats {
+      display: flex;
+      width: 40%;
+      height: 25px;
+      justify-content: space-around;
+      background-color: lightgrey;
+      position: absolute; 
+      align-items: center;
+      right: 0; 
+      bottom: 0;
+      border-top-left-radius: 25px;
+    }
+  }
+}

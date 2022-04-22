@@ -1,0 +1,36 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  width: 305px;
+  min-height: 100%;
+  border: 1px solid #D7D0CF;
+  font-size: x-large;
+  color: #444256;
+  padding-top: 15px;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  height: 175px;
+  border: none;
+  border-bottom: 1px solid #D7D0CF;
+  background-color: transparent;
+  color: #444256;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.login:hover {
+  background-color: #f2ebe8;
+}
+
+.login span {
+  margin-top: 5px;
+}

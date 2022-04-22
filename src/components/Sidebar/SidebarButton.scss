@@ -1,0 +1,26 @@
+.sideButton {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  height: 65px;
+  color: #444256;
+  background-color: transparent;
+  text-decoration: none;
+  padding-left: 20px;
+  border: none;
+  border-bottom: 1px solid #D7D0CF;
+  font-size: 25px;
+}
+
+.sideButton:hover {
+  background-color: #f2ebe8;
+}
+
+.sideButton span {
+  margin: 10px;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+}
