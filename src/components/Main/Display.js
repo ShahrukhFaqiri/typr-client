@@ -80,12 +80,12 @@ export default function Display() {
       });
 
       if (userProps.isAuthenticated) {
-        axios.get(`user/${userProps.user.email}`)
+        axios.get(`https://code-typr.herokuapp.com/user/${userProps.user.email}`)
         .then((res)=>{
         let score = wordsPerMin * accuracy;
        
          if(res.data[0].greatestScore < score){
-          axios.patch(`user/greatscore/${userProps.user.email}`, {
+          axios.patch(`https://code-typr.herokuapp.com/user/greatscore/${userProps.user.email}`, {
             greatestScore: score
           })
             .then((res) => {
