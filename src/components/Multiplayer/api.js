@@ -1,13 +1,15 @@
-const joinMatch = (socket) => {
-  socket.emit('joinMatch');
-}
+const joinMatch = (socket, server, userProps) => {
+  if (socket) {
+    socket.emit("joinMatch", server, userProps);
+  };
+};
 
 const sendGameProgress = (socket, counter, errors) => {
-  socket.emit('gameProgress', counter, errors);
-}
+  socket.emit("gameProgress", counter, errors);
+};
 
-const sendMessage = (socket, message) => {
-  socket.emit('sendMessage', message);
-}
+const promptComplete = (socket) => {
+  socket.emit("promptComplete");
+};
 
-module.exports = {joinMatch, sendGameProgress, sendMessage}
+module.exports = { joinMatch, sendGameProgress, promptComplete };

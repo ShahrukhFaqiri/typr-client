@@ -12,13 +12,14 @@ export default function Sidebar(props) {
   return (
     <section className="sidebar">
       <Login/>
-      <SignedIn/>
-      <SidebarButton href="/" text="Practice" onClick={setView} />
-      <SidebarButton href="/profile" text="Profile" onClick={setView} />
-      <SidebarButton href="/help" text="Help" onClick={setView} />
-      <SidebarButton href="/leaderboards" text="High Scores" onClick={setView} />
-      <SidebarButton href="/multiplayer" text="Multiplayer" onClick={setView} />
       <Logout/>
+      <SidebarButton text="Practice" onClick={setView} />
+      <SidebarButton text="Multiplayer" onClick={setView} />
+      <SidebarButton text="Profile" onClick={setView} />
+      <SidebarButton text="High Scores" onClick={setView} />
+      <SidebarButton text="Help" onClick={setView} />
+      <SignedIn/>
+      <img src="https://cdn.discordapp.com/attachments/955930052036558879/966114918036307978/My_project4.png" />
     </section>
   );
 };

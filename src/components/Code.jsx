@@ -22,7 +22,7 @@ export default function Code({ code, language }) {
 //     </div>
 //   );
 // };
-// `
+// `;
 
 // const htmlCode = `
 //     <div>

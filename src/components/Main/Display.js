@@ -85,7 +85,7 @@ export default function Display() {
         let score = wordsPerMin * accuracy;
        
          if(res.data[0].greatestScore < score){
-          axios.patch(`https://code-typr.herokuapp.com/user/greatscore/${userProps.user.email}`, {
+          axios.patch(`user/greatscore/${userProps.user.email}`, {
             greatestScore: score
           })
             .then((res) => {
@@ -93,7 +93,7 @@ export default function Display() {
          }
        })
 
-        axios.patch(`user/statistic/${userProps.user.email}`, {
+        axios.patch(`https://code-typr.herokuapp.com/user/statistic/${userProps.user.email}`, {
           attemptScore: wordsPerMin * accuracy,
           statistics: {
             accuracy: accuracy,
@@ -146,6 +146,7 @@ export default function Display() {
             indexes={wrongIndexes}
             counter={counter}
             line={input.line}
+            language={prompt.language === "Javascript" ? "js" : "python"}
           />
         </div>
         {!input.focused && <div className="overlay">
