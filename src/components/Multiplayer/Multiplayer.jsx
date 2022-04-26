@@ -101,6 +101,7 @@ export default function Multiplayer() {
         player3: {},
         player4: {},
       });
+      resetTimer();
     });
 
   }, []);
