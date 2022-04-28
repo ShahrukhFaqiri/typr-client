@@ -25,7 +25,6 @@ export default function Player(props) {
         </div>
       </div>
       <div className="player-stats">
-        <span>{position + nth(position)}</span>
         <span>{`Speed: ${speed}`}</span>
         <span>{`Errors: ${errors}`}</span>
       </div>
