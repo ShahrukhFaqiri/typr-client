@@ -25,6 +25,7 @@ export default function Player(props) {
         </div>
       </div>
       <div className="player-stats">
+       <br></br>
         <span>{`Speed: ${speed}`}</span>
         <span>{`Errors: ${errors}`}</span>
       </div>
